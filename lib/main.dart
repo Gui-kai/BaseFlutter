@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'mooc_base/HelloWorld.dart';
 
-//void main() => runApp(HelloWorld());
+void main() => runApp(HelloWorld());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

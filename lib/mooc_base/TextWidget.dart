@@ -7,15 +7,26 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'TextWidget',
-      home: Scaffold(
+      home: new Scaffold(
         appBar: new AppBar(
+          centerTitle: true,
           title: new Text('TextWidget'),
         ),
         body: new Center(
-          child: Text('我是Text我是Text我是Text我是Text我是Text我是Text我是Text'),
-        ),
+            child: new Text(
+          '我是Text Widget我是Text Widget我是Text Widget我是Text Widget我是Text Widget我是Text '
+              'Widget我是Text Widget',
+          maxLines: 3,
+          overflow: TextOverflow.fade,
+              textAlign: TextAlign.justify,
+              style: TextStyle(
+                fontSize: 20.0,
+                color:Color.fromARGB(255, 255, 150, 150),
+                decorationStyle: TextDecorationStyle.solid,
+                decoration: TextDecoration.underline
+              ),
+        )),
       ),
     );
   }
-
 }
