@@ -16,20 +16,16 @@ class ContainerWidget extends StatelessWidget {
           child: new Container(
             child: new Text(
               'Hello World',
-              style: TextStyle(fontSize: 40),
+              style: TextStyle(fontSize: 40,color: Colors.white),
             ),
             alignment: Alignment.center,
             width: 200.0,
             height: 400.0,
-            padding: const EdgeInsets.all(50) ,
-            margin: const EdgeInsets.all(50),
+            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             decoration: new BoxDecoration(
-              gradient: const LinearGradient(colors: [
-                Colors.lightBlue,
-                Colors.greenAccent,
-                Colors.purple
-              ])
-            ),
+                gradient: const LinearGradient(
+                    colors: [Colors.red, Colors.deepOrangeAccent])),
           ),
         ),
       ),
